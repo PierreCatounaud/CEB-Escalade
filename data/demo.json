@@ -441,7 +441,14 @@
     }
   ],
   "horaires": {
-    "statut": "À confirmer",
-    "note": "Le fichier ceb-creneaux.html fourni est une page 404 et ne contient pas le tableau des créneaux."
+    "statut": "Planning de référence transmis",
+    "saison": "2026–2027",
+    "periode": [
+      "2026-09-07",
+      "2027-06-27"
+    ],
+    "source": "Captures du tableau d'horaires CEB transmises le 9 novembre 2026",
+    "fichier": "data/planning.json",
+    "note": "Créneaux conditionnels et divergences de l’ancien site indiqués dans les données du planning ; disponibilités et encadrants non confirmés."
   }
 }
