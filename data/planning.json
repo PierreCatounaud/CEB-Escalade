@@ -1,0 +1,295 @@
+{
+  "season": "2026–2027",
+  "period": {
+    "from": "2026-09-07",
+    "to": "2027-06-27"
+  },
+  "source": "Tableau des créneaux CEB 2026–2027 transmis en captures d’écran le 9 novembre 2026",
+  "days": [
+    "lundi",
+    "mardi",
+    "mercredi",
+    "jeudi",
+    "vendredi",
+    "samedi",
+    "dimanche"
+  ],
+  "types": {
+    "jeunes": "Enfants et adolescents",
+    "adultes": "Adultes débutants",
+    "competition": "Compétition",
+    "para": "Para-escalade",
+    "libre": "Accès libre"
+  },
+  "sessions": [
+    {
+      "id": "lundi-1900-libre-1",
+      "day": "lundi",
+      "start": "19:00",
+      "end": "22:00",
+      "type": "libre",
+      "title": "Créneau libre",
+      "disciplines": [
+        "Difficulté",
+        "Bloc",
+        "Vitesse"
+      ]
+    },
+    {
+      "id": "mardi-1830-competition-2",
+      "day": "mardi",
+      "start": "18:30",
+      "end": "20:00",
+      "type": "competition",
+      "title": "Team P’tit Roc"
+    },
+    {
+      "id": "mardi-1900-libre-3",
+      "day": "mardi",
+      "start": "19:00",
+      "end": "22:00",
+      "type": "libre",
+      "title": "Créneau libre",
+      "condition": "Sous réserve de la présence d’un référent",
+      "disciplines": [
+        "Difficulté",
+        "Bloc",
+        "Vitesse"
+      ]
+    },
+    {
+      "id": "mardi-2000-competition-4",
+      "day": "mardi",
+      "start": "20:00",
+      "end": "21:30",
+      "type": "competition",
+      "title": "Team Roc"
+    },
+    {
+      "id": "mercredi-1600-jeunes-5",
+      "day": "mercredi",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "jeunes",
+      "title": "Cours 7–9 ans",
+      "age": "7–9 ans"
+    },
+    {
+      "id": "mercredi-1600-jeunes-6",
+      "day": "mercredi",
+      "start": "16:00",
+      "end": "17:00",
+      "type": "jeunes",
+      "title": "Cours 10–13 ans",
+      "age": "10–13 ans"
+    },
+    {
+      "id": "mercredi-1700-jeunes-7",
+      "day": "mercredi",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "jeunes",
+      "title": "Cours 10–13 ans",
+      "age": "10–13 ans"
+    },
+    {
+      "id": "mercredi-1700-jeunes-8",
+      "day": "mercredi",
+      "start": "17:00",
+      "end": "18:00",
+      "type": "jeunes",
+      "title": "Cours 5–6 ans",
+      "age": "5–6 ans"
+    },
+    {
+      "id": "mercredi-1800-jeunes-9",
+      "day": "mercredi",
+      "start": "18:00",
+      "end": "19:30",
+      "type": "jeunes",
+      "title": "Cours 14–18 ans",
+      "age": "14–18 ans",
+      "groupesSimultanes": 2
+    },
+    {
+      "id": "mercredi-1930-libre-10",
+      "day": "mercredi",
+      "start": "19:30",
+      "end": "22:00",
+      "type": "libre",
+      "title": "Créneau libre",
+      "disciplines": [
+        "Difficulté",
+        "Bloc",
+        "Vitesse"
+      ]
+    },
+    {
+      "id": "jeudi-1900-competition-11",
+      "day": "jeudi",
+      "start": "19:00",
+      "end": "20:30",
+      "type": "competition",
+      "title": "Team P’tit Roc"
+    },
+    {
+      "id": "jeudi-1900-libre-12",
+      "day": "jeudi",
+      "start": "19:00",
+      "end": "22:00",
+      "type": "libre",
+      "title": "Créneau libre",
+      "disciplines": [
+        "Difficulté",
+        "Bloc",
+        "Vitesse"
+      ]
+    },
+    {
+      "id": "jeudi-2030-competition-13",
+      "day": "jeudi",
+      "start": "20:30",
+      "end": "22:00",
+      "type": "competition",
+      "title": "Team Roc"
+    },
+    {
+      "id": "vendredi-1730-jeunes-14",
+      "day": "vendredi",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "jeunes",
+      "title": "Cours 10–13 ans",
+      "age": "10–13 ans"
+    },
+    {
+      "id": "vendredi-1730-jeunes-15",
+      "day": "vendredi",
+      "start": "17:30",
+      "end": "18:30",
+      "type": "jeunes",
+      "title": "Cours 7–9 ans",
+      "age": "7–9 ans"
+    },
+    {
+      "id": "vendredi-1830-jeunes-16",
+      "day": "vendredi",
+      "start": "18:30",
+      "end": "20:00",
+      "type": "jeunes",
+      "title": "Cours 14–18 ans",
+      "age": "14–18 ans",
+      "groupesSimultanes": 2
+    },
+    {
+      "id": "vendredi-2000-adultes-17",
+      "day": "vendredi",
+      "start": "20:00",
+      "end": "22:00",
+      "type": "adultes",
+      "title": "Cours adultes débutants",
+      "description": "Initiation à l’assurage et à l’autonomie en escalade"
+    },
+    {
+      "id": "vendredi-2000-libre-18",
+      "day": "vendredi",
+      "start": "20:00",
+      "end": "22:00",
+      "type": "libre",
+      "title": "Créneau libre",
+      "disciplines": [
+        "Difficulté",
+        "Bloc",
+        "Vitesse"
+      ]
+    },
+    {
+      "id": "samedi-0900-jeunes-19",
+      "day": "samedi",
+      "start": "09:00",
+      "end": "10:00",
+      "type": "jeunes",
+      "title": "Cours 10–13 ans",
+      "age": "10–13 ans",
+      "description": "Groupe 3"
+    },
+    {
+      "id": "samedi-1000-jeunes-20",
+      "day": "samedi",
+      "start": "10:00",
+      "end": "11:00",
+      "type": "jeunes",
+      "title": "Cours 7–9 ans",
+      "age": "7–9 ans"
+    },
+    {
+      "id": "samedi-1030-competition-21",
+      "day": "samedi",
+      "start": "10:30",
+      "end": "12:00",
+      "type": "competition",
+      "title": "Team Mini Roc",
+      "age": "7–13 ans"
+    },
+    {
+      "id": "samedi-1100-jeunes-22",
+      "day": "samedi",
+      "start": "11:00",
+      "end": "12:00",
+      "type": "jeunes",
+      "title": "Cours 5–6 ans",
+      "age": "5–6 ans"
+    },
+    {
+      "id": "samedi-1200-para-23",
+      "day": "samedi",
+      "start": "12:00",
+      "end": "13:00",
+      "type": "para",
+      "title": "Para-escalade"
+    },
+    {
+      "id": "samedi-1300-libre-24",
+      "day": "samedi",
+      "start": "13:00",
+      "end": "17:00",
+      "type": "libre",
+      "title": "Créneau libre",
+      "condition": "Sous réserve de la présence d’un référent",
+      "disciplines": [
+        "Difficulté",
+        "Bloc",
+        "Vitesse"
+      ]
+    },
+    {
+      "id": "dimanche-1000-libre-25",
+      "day": "dimanche",
+      "start": "10:00",
+      "end": "12:00",
+      "type": "libre",
+      "title": "Créneau libre",
+      "condition": "Sous réserve de la présence d’un référent"
+    },
+    {
+      "id": "dimanche-1300-libre-26",
+      "day": "dimanche",
+      "start": "13:00",
+      "end": "17:00",
+      "type": "libre",
+      "title": "Créneau libre",
+      "condition": "Sous réserve d’un référent et de la disponibilité du gymnase (matchs de basket)"
+    }
+  ],
+  "important": [
+    "Cours enfants et adolescents suspendus durant les vacances scolaires.",
+    "Créneaux libres : autonomie en escalade exigée, selon les conditions du club et les passeports FFME adaptés à la pratique.",
+    "Les créneaux conditionnels ne sont ouverts que si les conditions d’encadrement et de salle sont remplies."
+  ],
+  "aConfirmer": [
+    "Para-escalade le samedi : 12h–13h sur le tableau 2026–2027, 11h–12h sur la page descriptive du site officiel.",
+    "Accès libre du samedi : 13h–17h sur le tableau, 14h–17h dans la description des créneaux adultes.",
+    "Dimanche : le tableau distingue 10h–12h et 13h–17h, contrairement au texte général qui mentionne 10h–17h ; la mention relative aux matchs de basket doit être confirmée.",
+    "Le samedi, le tableau présente un cours 5–6 ans de 11h à 12h et un cours 10–13 ans de 9h à 10h, absents de la liste simplifiée des cours enfants."
+  ]
+}
