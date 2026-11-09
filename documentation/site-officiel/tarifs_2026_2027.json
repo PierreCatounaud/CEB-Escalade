@@ -1,0 +1,15 @@
+{
+  "saison": "2026-2027",
+  "source": "https://www.ceb-escalade.fr/inscriptions-tarifs/",
+  "tarifs_eur": {
+    "adultes": 185,
+    "7_13_ans": 240,
+    "14_18_ans": 250,
+    "baby_para": 250,
+    "team_mini_roc": 250,
+    "team_ptit_roc_roc": 350,
+    "nouvel_adherent_supplement": 15,
+    "licencie_ffme_exterieur": 110
+  },
+  "attention": "Tarif Team Roc divergent dans PV AGO 2026 (370 €) ; vérifier auprès du club."
+}
