@@ -1,0 +1,59 @@
+/* Planning CEB 2026-2027 — présentation responsive et accessible */
+.planning-hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#15161b 8%,#3c151d 100%);color:#fff;border-radius:17px;padding:31px clamp(20px,4vw,42px);margin:0 0 20px}
+.planning-hero:after{content:"";position:absolute;width:170px;height:170px;border:28px solid #d51e3055;border-radius:50%;right:-65px;top:-75px;pointer-events:none}
+.planning-hero h2{color:#fff;margin:9px 0 8px;font-size:clamp(26px,3.5vw,39px)}
+.planning-hero h2:before{display:none}
+.planning-hero p{max-width:760px;color:#f2e9eb;line-height:1.6;margin:9px 0}
+.planning-kicker{font-size:12px;letter-spacing:.13em;font-weight:900;color:#ff7a87;text-transform:uppercase}
+.planning-meta{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 0}
+.planning-meta span{background:#ffffff1b;border:1px solid #ffffff33;border-radius:99px;padding:7px 12px;font-size:12px;font-weight:800}
+.planning-toolbar{display:grid;grid-template-columns:1fr;gap:13px;background:#fff;border:1px solid #e6e6ea;border-radius:13px;padding:18px;margin:18px 0}
+.planning-filter-title{font-weight:850;margin:0 0 10px;color:#333;font-size:13px}
+.planning-chips{display:flex;flex-wrap:wrap;gap:7px}
+.planning-chip{background:#f5f5f7;border:1px solid #e2e2e6;color:#26272a;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:800}
+.planning-chip:hover{background:#ffe4e7}
+.planning-chip[aria-pressed="true"]{background:#d51e30;color:white;border-color:#d51e30}
+.planning-summary{font-size:13px;color:#666;margin:12px 0}
+.planning-scroller{overflow-x:auto;padding-bottom:10px}
+.planning-grid{display:grid;grid-template-columns:repeat(7,minmax(151px,1fr));gap:9px;align-items:start;min-width:1080px}
+.planning-day{background:#fff;border:1px solid #e6e6e9;border-radius:13px;min-height:130px;overflow:hidden;box-shadow:0 2px 12px #00000008}
+.planning-day-header{display:flex;justify-content:space-between;align-items:baseline;padding:12px 12px;background:#24252c;color:#fff;font-size:15px;font-weight:900}
+.planning-day-header small{color:#d2d2d9;font-weight:600;font-size:11px}
+.planning-slot-list{display:grid;gap:8px;padding:9px}
+.planning-slot{position:relative;border:1px solid #e5e5e8;border-left:4px solid #d51e30;border-radius:9px;padding:10px 9px;background:#fff;min-height:86px}
+.planning-slot--jeunes{border-left-color:#d04b63;background:#fff8f9}
+.planning-slot--adultes{border-left-color:#7e3d53;background:#faf5f8}
+.planning-slot--competition{border-left-color:#b41427;background:#fff1f3}
+.planning-slot--para{border-left-color:#74717c;background:#f7f7fa}
+.planning-slot--libre{border-left-color:#494b54;background:#f8f8f9}
+.planning-time{font-size:13px;font-weight:900;color:#16171b;display:block;margin-bottom:6px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.planning-slot h3{font-size:13px;line-height:1.28;margin:0 0 6px;color:#24242b}
+.planning-type{font-size:10px;text-transform:uppercase;letter-spacing:.05em;font-weight:900;color:#7a4650;margin:0 0 6px}
+.planning-slot p{font-size:11px;line-height:1.45;margin:4px 0;color:#56565f}
+.planning-condition{padding:6px;border-radius:5px;background:#f8eadf;color:#69411b!important}
+.planning-empty{font-size:12px;color:#86868b;padding:10px}
+.planning-note{margin:20px 0;background:#fff;padding:18px 21px;border-radius:12px;border:1px solid #e5e5e8}
+.planning-note h3{margin:2px 0 8px;font-size:17px}
+.planning-note ul{padding-left:19px;color:#4d4d55;line-height:1.65;margin:8px 0}
+.planning-note li{margin:6px 0}
+.planning-verify{border-left:4px solid #a75e20;background:#fff9ed}
+.planning-verify h3{color:#8b521f}
+.planning-admin-panel{margin-top:18px}
+.planning-demo-figures{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}
+.planning-demo-figure{background:#fafafa;border:1px solid #eee;padding:10px 14px;border-radius:8px;min-width:130px;flex:1}
+.planning-demo-figure strong{display:block;font-size:25px;color:#d51e30}
+.planning-demo-figure span{font-size:12px;color:#555}
+@media(max-width:760px){
+ .planning-toolbar{padding:14px}
+ .planning-hero{padding:24px 19px}
+ .planning-scroller{overflow:visible}
+ .planning-grid{grid-template-columns:1fr;min-width:0;gap:12px}
+ .planning-day{min-height:0}
+ .planning-day-header{padding:11px 14px}
+ .planning-slot-list{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:9px}
+ .planning-slot{min-height:0;padding:12px 13px}
+ .planning-time{font-size:15px}
+ .planning-slot h3{font-size:15px}
+ .planning-slot p{font-size:13px}
+}
+@media(prefers-reduced-motion:no-preference){.planning-chip{transition:background .15s,color .15s}}
