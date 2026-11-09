@@ -50,4 +50,39 @@
   for(const a of d.articles){const card=document.createElement('article');card.className='card';const tag=document.createElement('span');tag.className='demo-pill';tag.textContent=a.statut;const title=document.createElement('h3');title.textContent=a.titre;const place=document.createElement('p');place.textContent=a.lieu+' · '+a.date;const desc=document.createElement('p');desc.textContent=a.resume;const link=document.createElement('a');link.href=a.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Lire la source FFME';card.append(tag,title,place,desc,link);news.appendChild(card)}
  }catch(e){console.error('Chargement des données de démonstration :',e)}
 })();
-</script><script src="scripts/planning.js" defer></script></body></html>
+</script><script src="scripts/planning.js" defer></script><style id="ceb-visual-demo">
+:root{--red:#e12236;--dark:#101116;--bg:#f1f2f4}
+body{background:#f1f2f4}header{box-shadow:0 8px 32px #0002}.logo{letter-spacing:-.8px}.logo:before{content:"◆";font-size:18px;margin-right:9px;color:#ff4354}
+main{max-width:1320px}.hero{min-height:510px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;position:relative;isolation:isolate;overflow:hidden;background:#15161b url("https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1800&q=80") center 48%/cover no-repeat;box-shadow:0 20px 55px #0002}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,9,15,.96) 0%,rgba(7,9,15,.83) 43%,rgba(7,9,15,.20) 100%);z-index:-1}.hero h1{font-size:clamp(40px,6vw,78px);text-shadow:0 2px 20px #0005}.hero .tag{background:#e12236;color:white;letter-spacing:1.5px}.hero p{font-size:17px;color:#eee}.hero button{font-size:16px;padding:15px 23px}
+.card{overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.card:hover{transform:translateY(-3px);box-shadow:0 13px 30px #00000014}
+#accueil>.grid>.card{padding:0 0 22px}#accueil>.grid>.card>h3,#accueil>.grid>.card>p,#accueil>.grid>.card>button{margin-left:22px;margin-right:22px}
+.ceb-cover{width:100%;height:180px;object-fit:cover;display:block;background:#24252b}.ceb-cover.course{height:155px;margin-bottom:18px;border-radius:9px}.ceb-cover.news{height:155px;margin:-23px -23px 18px;width:calc(100% + 46px)}.ceb-cover.comp{height:180px;margin:-23px -23px 18px;width:calc(100% + 46px)}
+#cours .grid>.card{padding:17px}#cours .grid>.card .tag{margin-top:2px}#cours .grid>.card h2{font-size:30px}#cours .grid>.card h2:before{display:none}
+#competition>.grid>.card{min-height:260px}.demo-news .card{padding:23px}.demo-news .card:hover{transform:translateY(-3px)}
+.ceb-intro{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;margin:28px 0 38px;background:#17191f;color:white;border-radius:16px;overflow:hidden}.ceb-intro img{width:100%;height:300px;object-fit:cover}.ceb-intro>div{padding:30px}.ceb-intro h2{margin:10px 0}.ceb-intro p{line-height:1.7;color:#e1e1e4}
+.ceb-photo-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.ceb-photo-strip img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+#admin .stats>.card,#adherent .card,#encadrant .card{border-top:3px solid var(--red)}
+footer{border-top:5px solid #e12236}
+@media(max-width:720px){.hero{min-height:490px;background-position:60% center}.hero:before{background:linear-gradient(90deg,#080a0ee8,#080a0e77)}.ceb-intro{grid-template-columns:1fr}.ceb-intro img{height:220px;order:-1}.ceb-photo-strip img{height:105px}.ceb-cover{height:150px}}
+</style>
+<script id="ceb-visual-demo-js">
+(function(){
+const photo={
+climb:"https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1100&q=75",
+wall:"https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=1100&q=75",
+mountain:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1100&q=75",
+nature:"https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1100&q=75",
+sport:"https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1100&q=75",
+outdoor:"https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1100&q=75"
+};
+function cover(parent,url,alt,cls){if(!parent)return;const img=document.createElement("img");img.className="ceb-cover "+(cls||"");img.src=url;img.alt=alt;img.loading="lazy";img.onerror=function(){this.style.display="none"};parent.insertBefore(img,parent.firstChild)}
+document.querySelectorAll("#accueil>.grid>.card").forEach((c,i)=>cover(c,[photo.wall,photo.climb,photo.mountain][i],["Mur d'escalade — visuel de démonstration","Grimpeur — visuel de démonstration","Montagne — visuel de démonstration"][i]));
+document.querySelectorAll("#cours .grid>.card").forEach((c,i)=>cover(c,[photo.climb,photo.wall,photo.outdoor,photo.mountain][i],"Illustration du cours — visuel de démonstration","course"));
+document.querySelectorAll("#competition>.grid>.card").forEach((c,i)=>cover(c,[photo.climb,photo.wall,photo.sport][i%3],"Compétition — visuel de démonstration","comp"));
+const home=document.getElementById("accueil");if(home){const section=document.createElement("section");section.className="ceb-intro";section.innerHTML='<div><span class="tag">LE CLUB</span><h2>UNE PASSION, UN COLLECTIF</h2><p>Du premier contact avec les prises aux projets sportifs les plus ambitieux, le CEB accompagne les grimpeuses et grimpeurs de tous âges.</p><button data-go="infos">Découvrir le club</button></div><img loading="lazy" alt="Escalade en pleine nature — photographie de démonstration" src="'+photo.climb+'">';home.appendChild(section)}
+const infos=document.getElementById("infos");if(infos){const strip=document.createElement("div");strip.className="ceb-photo-strip";for(const [url,alt] of [[photo.climb,"Escalade — démonstration"],[photo.wall,"Activité sportive — démonstration"],[photo.mountain,"Paysage montagneux — démonstration"]]){const img=document.createElement("img");img.src=url;img.loading="lazy";img.alt=alt;strip.appendChild(img)}infos.appendChild(strip)}
+function news(){document.querySelectorAll(".demo-news .card").forEach((c,i)=>{if(!c.querySelector(".ceb-cover"))cover(c,[photo.climb,photo.wall,photo.mountain][i%3],"Illustration d'actualité — visuel de démonstration","news")})}
+const target=document.getElementById("agenda");if(target){new MutationObserver(news).observe(target,{childList:true,subtree:true});news()}
+})();
+</script></body></html>
