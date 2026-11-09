@@ -1,0 +1,447 @@
+{
+  "demo": true,
+  "description": "Données intégralement fictives pour démonstration. Ne pas confondre avec les licenciés du CEB.",
+  "adherents": [
+    {
+      "id": "DEMO-A001",
+      "prenom": "Camille",
+      "nom": "Martin",
+      "age": 22,
+      "type": "Adulte",
+      "groupe": "Adultes débutants",
+      "statut": "À vérifier"
+    },
+    {
+      "id": "DEMO-A002",
+      "prenom": "Thomas",
+      "nom": "Bernard",
+      "age": 29,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A003",
+      "prenom": "Julie",
+      "nom": "Petit",
+      "age": 36,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A004",
+      "prenom": "Nicolas",
+      "nom": "Robert",
+      "age": 43,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A005",
+      "prenom": "Sarah",
+      "nom": "Richard",
+      "age": 50,
+      "type": "Adulte",
+      "groupe": "Adultes débutants",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A006",
+      "prenom": "Alexandre",
+      "nom": "Durand",
+      "age": 57,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A007",
+      "prenom": "Emma",
+      "nom": "Dubois",
+      "age": 24,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "À vérifier"
+    },
+    {
+      "id": "DEMO-A008",
+      "prenom": "Julien",
+      "nom": "Moreau",
+      "age": 31,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A009",
+      "prenom": "Laura",
+      "nom": "Laurent",
+      "age": 38,
+      "type": "Adulte",
+      "groupe": "Adultes débutants",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A010",
+      "prenom": "Maxime",
+      "nom": "Simon",
+      "age": 45,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A011",
+      "prenom": "Sophie",
+      "nom": "Michel",
+      "age": 52,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A012",
+      "prenom": "Hugo",
+      "nom": "Lefebvre",
+      "age": 59,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A013",
+      "prenom": "Manon",
+      "nom": "Leroy",
+      "age": 26,
+      "type": "Adulte",
+      "groupe": "Adultes débutants",
+      "statut": "À vérifier"
+    },
+    {
+      "id": "DEMO-A014",
+      "prenom": "Antoine",
+      "nom": "Roux",
+      "age": 33,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A015",
+      "prenom": "Léa",
+      "nom": "David",
+      "age": 40,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A016",
+      "prenom": "Mathieu",
+      "nom": "Bertrand",
+      "age": 47,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A017",
+      "prenom": "Chloé",
+      "nom": "Morel",
+      "age": 54,
+      "type": "Adulte",
+      "groupe": "Adultes débutants",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A018",
+      "prenom": "Pierre",
+      "nom": "Fournier",
+      "age": 61,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-A019",
+      "prenom": "Inès",
+      "nom": "Girard",
+      "age": 28,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "À vérifier"
+    },
+    {
+      "id": "DEMO-A020",
+      "prenom": "Romain",
+      "nom": "Bonnet",
+      "age": 35,
+      "type": "Adulte",
+      "groupe": "Adultes accès libre",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J001",
+      "prenom": "Lucas",
+      "nom": "Lambert",
+      "age": 5,
+      "type": "Jeune",
+      "groupe": "5–6 ans",
+      "statut": "À vérifier"
+    },
+    {
+      "id": "DEMO-J002",
+      "prenom": "Jade",
+      "nom": "Fontaine",
+      "age": 8,
+      "type": "Jeune",
+      "groupe": "7–9 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J003",
+      "prenom": "Nathan",
+      "nom": "Rousseau",
+      "age": 11,
+      "type": "Jeune",
+      "groupe": "10–13 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J004",
+      "prenom": "Louise",
+      "nom": "Vincent",
+      "age": 14,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J005",
+      "prenom": "Gabriel",
+      "nom": "Muller",
+      "age": 17,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J006",
+      "prenom": "Alice",
+      "nom": "Lefevre",
+      "age": 6,
+      "type": "Jeune",
+      "groupe": "5–6 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J007",
+      "prenom": "Adam",
+      "nom": "Faure",
+      "age": 9,
+      "type": "Jeune",
+      "groupe": "7–9 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J008",
+      "prenom": "Zoé",
+      "nom": "Andre",
+      "age": 12,
+      "type": "Jeune",
+      "groupe": "10–13 ans",
+      "statut": "À vérifier"
+    },
+    {
+      "id": "DEMO-J009",
+      "prenom": "Louis",
+      "nom": "Mercier",
+      "age": 15,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J010",
+      "prenom": "Lina",
+      "nom": "Blanc",
+      "age": 18,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J011",
+      "prenom": "Raphaël",
+      "nom": "Guerin",
+      "age": 7,
+      "type": "Jeune",
+      "groupe": "7–9 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J012",
+      "prenom": "Mila",
+      "nom": "Boyer",
+      "age": 10,
+      "type": "Jeune",
+      "groupe": "10–13 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J013",
+      "prenom": "Arthur",
+      "nom": "Garnier",
+      "age": 13,
+      "type": "Jeune",
+      "groupe": "10–13 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J014",
+      "prenom": "Rose",
+      "nom": "Chevalier",
+      "age": 16,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J015",
+      "prenom": "Noah",
+      "nom": "Francois",
+      "age": 5,
+      "type": "Jeune",
+      "groupe": "5–6 ans",
+      "statut": "À vérifier"
+    },
+    {
+      "id": "DEMO-J016",
+      "prenom": "Eva",
+      "nom": "Legrand",
+      "age": 8,
+      "type": "Jeune",
+      "groupe": "7–9 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J017",
+      "prenom": "Ethan",
+      "nom": "Gauthier",
+      "age": 11,
+      "type": "Jeune",
+      "groupe": "10–13 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J018",
+      "prenom": "Anna",
+      "nom": "Garcia",
+      "age": 14,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J019",
+      "prenom": "Sacha",
+      "nom": "Perrin",
+      "age": 17,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J020",
+      "prenom": "Maya",
+      "nom": "Robin",
+      "age": 6,
+      "type": "Jeune",
+      "groupe": "5–6 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J021",
+      "prenom": "Paul",
+      "nom": "Clement",
+      "age": 9,
+      "type": "Jeune",
+      "groupe": "7–9 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J022",
+      "prenom": "Nina",
+      "nom": "Morin",
+      "age": 12,
+      "type": "Jeune",
+      "groupe": "10–13 ans",
+      "statut": "À vérifier"
+    },
+    {
+      "id": "DEMO-J023",
+      "prenom": "Eliott",
+      "nom": "Nicolas",
+      "age": 15,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J024",
+      "prenom": "Clara",
+      "nom": "Henry",
+      "age": 18,
+      "type": "Jeune",
+      "groupe": "14–18 ans",
+      "statut": "Actif"
+    },
+    {
+      "id": "DEMO-J025",
+      "prenom": "Oscar",
+      "nom": "Roussel",
+      "age": 7,
+      "type": "Jeune",
+      "groupe": "7–9 ans",
+      "statut": "Actif"
+    }
+  ],
+  "articles": [
+    {
+      "id": "ffme-para-beaumont-2027",
+      "titre": "Coupe de France de para-escalade : rendez-vous à Beaumont-sur-Oise",
+      "date": "2027-04-03",
+      "lieu": "Beaumont-sur-Oise (95)",
+      "resume": "Le calendrier prévisionnel FFME annonce une Coupe de France de para-escalade les 3 et 4 avril 2027 à Beaumont-sur-Oise. Dates et modalités à confirmer auprès de la fédération.",
+      "source": "FFME — calendrier prévisionnel 2026–2027",
+      "url": "https://www.ffme.fr/calendrier-previsionnel-des-competitions-descalade-pour-la-saison-2026-2027/",
+      "statut": "Prévisionnel"
+    },
+    {
+      "id": "ffme-bloc-buthiers-2027",
+      "titre": "Bloc : une Coupe de France et un open national prévus à Buthiers",
+      "date": "2027-05-15",
+      "lieu": "Buthiers (77)",
+      "resume": "Les 15 et 16 mai 2027, Buthiers figure au calendrier prévisionnel FFME pour une Coupe de France de bloc et un open national.",
+      "source": "FFME — calendrier prévisionnel 2026–2027",
+      "url": "https://www.ffme.fr/calendrier-previsionnel-des-competitions-descalade-pour-la-saison-2026-2027/",
+      "statut": "Prévisionnel"
+    },
+    {
+      "id": "ffme-idf-saison-2026-2027",
+      "titre": "Compétitions franciliennes : comprendre les circuits de la saison",
+      "date": "2026-11-09",
+      "lieu": "Île-de-France",
+      "resume": "La ligue FFME Île-de-France présente deux circuits : le circuit fédéral qualificatif et le circuit promotionnel. Retrouvez les informations officielles et le calendrier régional sur le site de la ligue.",
+      "source": "Ligue FFME Île-de-France",
+      "url": "https://idf.ffme.fr/competition/",
+      "statut": "Information fédérale"
+    }
+  ],
+  "horaires": {
+    "statut": "À confirmer",
+    "note": "Le fichier ceb-creneaux.html fourni est une page 404 et ne contient pas le tableau des créneaux."
+  }
+}
