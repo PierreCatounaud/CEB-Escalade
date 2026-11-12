@@ -1,13 +1,13 @@
 (()=>{'use strict';
 const KEY='ceb-admin-edits-v1';let edits={};try{edits=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{}
 let editing=false,applying=false;
-const excluded='button,input,select,textarea,a,script,style,.ceb-cover,.ceb-credits,.ceb-admin-editor,[contenteditable]';
+const excluded='button,input,select,textarea,a,script,style,.ceb-cover,.ceb-credits,.ceb-admin-editor';
 const roots=['accueil','cours','planning','competition','agenda','infos','inscription','connexion','adherent','encadrant','admin'];
 function path(el){const root=el.closest('.page');if(!root)return null;let a=[],node=el;while(node&&node!==root){let i=Array.prototype.indexOf.call(node.parentElement.children,node);a.unshift(node.tagName.toLowerCase()+':nth-child('+(i+1)+')');node=node.parentElement}return root.id+'|'+a.join('>')}
 function eligible(el){return el.matches('h1,h2,h3,h4,p,li,span,strong,small,td,th,div')&&!el.matches(excluded)&&!el.closest(excluded)&&!el.children.length&&el.textContent.trim()&&el.textContent.trim().length<600&&el.closest('.page')&&!el.closest('.notice')&&!el.closest('.demo-table')}
 function each(fn){roots.forEach(id=>{const root=document.getElementById(id);if(!root)return;root.querySelectorAll('h1,h2,h3,h4,p,li,span,strong,small,td,th,div').forEach(el=>{if(eligible(el))fn(el)})})}
 function apply(){if(applying||editing)return;applying=true;each(el=>{const k=path(el);if(Object.prototype.hasOwnProperty.call(edits,k)&&el.textContent!==edits[k])el.textContent=edits[k]});applying=false}
-function setEditing(on){editing=on;each(el=>{el.contentEditable=on?'true':'false';el.classList.toggle('ceb-editable',on)});document.body.classList.toggle('ceb-edit-mode',on);document.getElementById('ceb-edit-status').textContent=on?'Mode édition activé : clique sur un texte, modifie-le, puis enregistre.':'Mode consultation.';document.getElementById('ceb-edit-toggle').textContent=on?'Terminer les modifications':'Modifier les pages';}
+function setEditing(on){editing=on;each(el=>{if(on)el.contentEditable='true';else el.removeAttribute('contenteditable');el.classList.toggle('ceb-editable',on)});document.body.classList.toggle('ceb-edit-mode',on);document.getElementById('ceb-edit-status').textContent=on?'Mode édition activé : clique sur un texte, modifie-le, puis enregistre.':'Mode consultation.';document.getElementById('ceb-edit-toggle').textContent=on?'Terminer les modifications':'Modifier les pages';}
 function save(){each(el=>{if(el.isContentEditable){edits[path(el)]=el.textContent.trim()}});localStorage.setItem(KEY,JSON.stringify(edits));setEditing(false);document.getElementById('ceb-edit-status').textContent='Modifications enregistrées sur cet appareil uniquement.'}
 function exportFile(){const blob=new Blob([JSON.stringify({version:1,updatedAt:new Date().toISOString(),edits},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ceb-modifications.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)}
 const admin=document.querySelector('#admin .layout>div');if(!admin)return;
