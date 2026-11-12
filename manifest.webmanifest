@@ -1,0 +1,20 @@
+{
+  "name": "CEB Escalade — Club Escalade Beaumontois",
+  "short_name": "CEB Escalade",
+  "description": "Cours, planning, compétitions et espace adhérent du CEB Escalade.",
+  "start_url": "./?app=iphone",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111217",
+  "theme_color": "#d51e30",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "./assets/ceb-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
