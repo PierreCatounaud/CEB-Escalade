@@ -81,7 +81,6 @@
       if(!Array.isArray(data.sessions)||!Array.isArray(data.days))throw Error('Données de planning invalides');
       render();
       makeNotes('planning-important','À savoir avant de venir',data.important);
-      makeNotes('planning-verify','Points à confirmer auprès du club',data.aConfirmer);
       if(demo?.adherents)renderDemo(demo.adherents);
     }).catch(err=>{
       console.error('Planning CEB :',err);
