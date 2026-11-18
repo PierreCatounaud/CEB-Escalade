@@ -40,7 +40,7 @@
     if(!data)return;
     pills('planning-days',[['tous','Toute la semaine'],...days.map((d,i)=>[d,shortDays[i]])],chosenDay,v=>{chosenDay=v;render()});
     pills('planning-types',categories,chosenType,v=>{chosenType=v;render()});
-    const visible=data.sessions.filter(s=>(chosenType==='tous'||s.type===chosenType)&&(chosenDay==='tous'||s.day===chosenDay));
+    const visible=data.sessions.filter(s=>(chosenType==='tous'||s.type===chosenType||((chosenType==='jeunes'||chosenType==='adultes')&&s.type==='libre'))&&(chosenDay==='tous'||s.day===chosenDay));
     byId('planning-count').textContent=visible.length+' créneau'+(visible.length!==1?'x':'')+' affiché'+(visible.length!==1?'s':'')+' · Saison '+data.season;
     const grid=byId('planning-grid');grid.replaceChildren();
     const shownDays=chosenDay==='tous'?days:[chosenDay];
