@@ -4,9 +4,8 @@
   const panel=document.getElementById('planning');
   if(!panel)return;
   const days=['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
-  const shortDays=['Lun.','Mar.','Mer.','Jeu.','Ven.','Sam.','Dim.'];
   const categories=[['tous','Toutes les activités'],['jeunes','Jeunes'],['adultes','Adultes'],['competition','Compétition'],['para','Para-escalade'],['libre','Accès libre']];
-  let chosenDay='tous',chosenType='tous',data=null;
+  let chosenType='tous',data=null;
   const byId=(id)=>document.getElementById(id);
   const el=(tag,cls,content)=>{
     const node=document.createElement(tag);
@@ -38,12 +37,11 @@
   }
   function render(){
     if(!data)return;
-    pills('planning-days',[['tous','Toute la semaine'],...days.map((d,i)=>[d,shortDays[i]])],chosenDay,v=>{chosenDay=v;render()});
     pills('planning-types',categories,chosenType,v=>{chosenType=v;render()});
-    const visible=data.sessions.filter(s=>(chosenType==='tous'||s.type===chosenType||((chosenType==='jeunes'||chosenType==='adultes')&&s.type==='libre'))&&(chosenDay==='tous'||s.day===chosenDay));
+    const visible=data.sessions.filter(s=>(chosenType==='tous'||s.type===chosenType||((chosenType==='jeunes'||chosenType==='adultes')&&s.type==='libre')));
     byId('planning-count').textContent=visible.length+' créneau'+(visible.length!==1?'x':'')+' affiché'+(visible.length!==1?'s':'')+' · Saison '+data.season;
     const grid=byId('planning-grid');grid.replaceChildren();
-    const shownDays=chosenDay==='tous'?days:[chosenDay];
+    const shownDays=days;
     for(const day of shownDays){
       const items=visible.filter(s=>s.day===day).sort((a,b)=>a.start.localeCompare(b.start)||a.end.localeCompare(b.end));
       const column=el('section','planning-day');
